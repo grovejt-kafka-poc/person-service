@@ -1,0 +1,26 @@
+
+server:
+  port: 8010
+
+
+kafka:
+  bootstrap-servers: 192.168.99.100:9092
+  topic:
+    personEvent: dst.hs.kafkapoc.personevent
+
+  
+spring:
+
+  application:    name: person-service
+
+  jpa:    show-sql: true
+    hibernate:      ddl-auto: validate
+
+  h2:    console:      enabled: true
+      path: "/h2-console" 
+      
+
+logging:
+  level:
+    org.springframework.data.rest.webmvc: WARN
+             
