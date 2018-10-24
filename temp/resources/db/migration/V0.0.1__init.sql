@@ -10,5 +10,6 @@ create table person (
 	last_name varchar(255), 
 	email varchar(255), 
 	birth_date timestamp, 
-	primary key (id));
+	primary key (id)
+);
 	
